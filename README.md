@@ -7,7 +7,7 @@ Recently, the California QRP Club did a version of Bruce’s clock that runs on 
 Unfortunately, the approach Robert used to access the data was incompatible with the method required for the ESP32 processor due to differences in the software libraries available for each of the processors.
 
 I spent a couple of weeks working with Robert to figure out how to make the software run on either processor.
-Once that problem was solved, I continued to do some cleanup on the software and added the capability for the user to define a number of items from the solar data that could be displayed in a rotating sequence every 5 seconds on the clock; the user can add other items if desired.
+Once that problem was solved, I continued to do some cleanup on the software and added the capability for the user to define a number of items from the solar data that could be displayed in a rotating sequence on the clock at a rate chosen by the user;  the user can add other items if desired.
 
 We also added the capability for the user to define multiple WiFi networks, so that if a connection cannot be established on one, we will try others.
 
