@@ -16,3 +16,8 @@ As there were a couple of things I didn’t like about the ESP32 PCB that I had 
 There are actually three different hardware versions. This document will describe both the new hardware and software.
 In addition to this document, the Gerber files for all three versions of the clock and the software is available on Github. The TFT_eSPI setup files are also available there.
 
+Update July 7, 2025:
+
+    Working with Glenn (VK3PE) we discovered that not all Cheap Yellow Displays are the same. I updated
+    the 'ESP32_Cheap_Yellow_Display.h' file to include options that resolved the differences we found
+    in the different ones.
