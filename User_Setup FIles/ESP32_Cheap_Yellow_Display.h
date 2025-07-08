@@ -1,21 +1,37 @@
 /*
- *	ESP32_Cheap_Yellow_Display.h - Modified by WA2FZW 06/11/2025
+ *	ESP32_Cheap_Yellow_Display.h - Modified by WA2FZW 07/07/2025
  *
  *		This is a stripped down user setup file for the TFT_eSPI library
  *		for the 'Cheap Yellow Display' available at Amazon and other places.
- *		The one distributed on the CYD site:
  *
- *		https://randomnerdtutorials.com/cheap-yellow-display-esp32-2432s028r/
+ *		I've stripped out all the stuff not needed for the Cheap Yellow Display.
  *
- *		did not work correctly (at least with version 1.8.13 of the Arduino
- *		IDE. 
+ *		Working with Glenn (VK3PE), we discovered that all Cheap Yellow Displays
+ *		are not the same. Glenn had some that had 1/4 of the screen rotated 90
+ *		degrees from the correct orientation and some on which the colors were
+ *		inverted.
  *
- *		I've stripped out all the stuff not needed for the Cheap Yellow Display 
- *		and fixed the one bugthat was causing compile errors.
+ *		If your display has the problem mentioned above, try using the 'ILI9341_2_DRIVER'
+ *		instead of the 'ILI9341_DRIVER'.
  */
 
-
 	#define ILI9341_DRIVER				// The display driver chip is the ILI9341
+//	#define ILI9341_2_DRIVER
+
+
+/*
+ *	If the colors are inverted, put the following line in the initialization section
+ *	of your code:
+ *
+ *		tft.invertDisplay (1);
+ *
+ *	If that doesn't fix the problem, you can try uncommenting one of the following
+ *	definitions:
+ */
+
+//  #define TFT_RGB_ORDER TFT_RGB		// Color order Red-Green-Blue
+//	#define TFT_RGB_ORDER TFT_BGR		// Color order Blue-Green-Red
+
 
 
 /*
