@@ -21,6 +21,7 @@ Update July 7, 2025:
 
 Working with Glenn (VK3PE) we discovered that not all Cheap Yellow Displays are the same. I updated the 'ESP32_Cheap_Yellow_Display.h' file to include options that resolved the differences we found in the different ones.
 
+
 Update July 11, 2025:
 
 Updated the ‘NTP Clock With Solar Data.pdf’ to further clarify the issues with the Cheap Yellow Displays and how to fix the problems with some.
