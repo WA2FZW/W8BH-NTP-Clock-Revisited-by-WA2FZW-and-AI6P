@@ -25,3 +25,7 @@ Working with Glenn (VK3PE) we discovered that not all Cheap Yellow Displays are 
 Update July 11, 2025:
 
 Updated the ‘NTP Clock With Solar Data.pdf’ to further clarify the issues with the Cheap Yellow Displays and how to fix the problems with some.
+
+Update November 1, 2025:
+
+Version 3.1 adds the ability to cycle through a list of local timezones to be displayed. As distributed, the clock will alternate between US Eastern time and Australian Eastern time every 5 seconds. Instructions on how to modify the list are in the 'UserSettings.h' file.
